@@ -1,0 +1,68 @@
+{
+  "name": "@seedrs/generator-seedrs-npm",
+  "version": "0.0.0",
+  "description": "Bootstraps an NPM package",
+  "homepage": "https://www.seedrs.com",
+  "author": {
+    "name": "Seedrs",
+    "email": "tech@seedrs.com",
+    "url": "https://www.seedrs.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "seedrs",
+    "generator",
+    "npm",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "@seedrs/eslint-config-seedrs-base": "^1.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.4.0",
+    "eslint-config-xo": "0.25.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
+    "generator-node": "^2.5.0",
+    "jest": "^23.5.0",
+    "lodash": "^4.17.11",
+    "semantic-release": "^15.9.16",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "2.4.1",
+    "yeoman-generator": "3.1.1",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "commit": "git-cz",
+    "test": "jest",
+    "semantic-release": "semantic-release --no-ci -b $BUILDKITE_JOB_ID"
+  },
+  "repository": "https://github.com/Seedrs/generator-seedrs-npm.git",
+  "license": "Apache-2.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
