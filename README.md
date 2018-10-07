@@ -41,6 +41,14 @@ Yeoman will prompt you for three things:
 
 *private* - Answering yes will setup the project as a private module.
 
+### Buildkite
+
+In order for buildkite to execute the pipeling, the steps will need to be executable. To do this, run the following command from the root of your project.
+
+```bash
+chmod +x .buildkite/steps/*.sh
+```
+
 ## Folder structure
 
 Running the generator will scaffold your project in the following
