@@ -18,6 +18,7 @@
     "@seedrs/eslint-config-seedrs-base": "^1.1.1",
     "babel-core": "^7.0.0-bridge",
     "babel-eslint": "10.0.1",
+    "babel-jest": "^23.6.0",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.6.0",
     "eslint-plugin-import": "^2.14.0",
