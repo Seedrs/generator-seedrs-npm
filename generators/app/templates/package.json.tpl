@@ -8,7 +8,7 @@
     "commit": "git-cz",
     "lint": "eslint ./src/*",
     "test": "node scripts/test.js",
-    "semantic-release": "semantic-release --no-ci -b $BUILDKITE_JOB_ID"
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@babel/core": "7.1.2",
