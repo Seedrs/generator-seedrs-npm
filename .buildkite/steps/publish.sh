@@ -8,7 +8,8 @@ echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 git config user.email "development.team@seedrs.com"
 git config user.name "seedrs.bot"
 
-git checkout -b $BUILDKITE_JOB_ID
+git fetch
+git checkout master
 
 yarn semantic-release
 
