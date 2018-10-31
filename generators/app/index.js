@@ -107,6 +107,12 @@ module.exports = class extends Generator {
       this.destinationPath('.gitignore')
     );
 
+    // .npmignore
+    this.fs.copy(
+      this.templatePath('.npmignore.tpl'),
+      this.destinationPath('.npmignore')
+    );
+
     // docker-compose.yml
     this.fs.copyTpl(
       this.templatePath('docker-compose.yml.tpl'),

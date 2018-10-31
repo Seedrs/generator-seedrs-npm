@@ -21,6 +21,7 @@ describe('generator-seedrs-npm:app', () => {
         '.babelrc',
         '.eslintrc.js',
         '.gitignore',
+        '.npmignore',
         'docker-compose.yml',
         'Dockerfile',
         'README.md'
