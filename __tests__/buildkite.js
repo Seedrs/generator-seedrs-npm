@@ -29,4 +29,12 @@ describe('generator-seedrs-npm:buildkite', () => {
       [pipelinePath, 'concurrency_group: \'seedrs-npm-project/publish\'']
     ]);
   });
+
+  it('creates publish and runs git fetch and checks out to master', () => {
+    const publishPath = './.buildkite/steps/publish.sh';
+    assert.fileContent([
+      [publishPath, 'git fetch'],
+      [publishPath, 'git checkout master']
+    ]);
+  });
 });
