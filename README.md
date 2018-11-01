@@ -79,6 +79,7 @@ src/
 .babelrc
 .eslintrc.js
 .gitignore
+.npmignore
 docker-compose.yml
 Dockerfile
 package.json
@@ -96,6 +97,24 @@ Contains a pipeline.yml which defines three tasks:
 * one for linting the project
 * one for running the tests
 * one for publishing the package to NPM
+
+### .npmignore
+
+This file maintains a blacklist of files which will *not* be included in
+the final tarball which is uploaded to npm. By default we are not
+bundling the following files and directories.
+
+```
+.buildkite
+scripts
+Dockerfile
+docker-compose.yml
+.babelrc
+.eslintrc.js
+yarn.lock
+__tests__
+src
+```
 
 ### Scripts
 
